@@ -20,10 +20,15 @@ Cleaner Codebase: Reduce widget nesting and improve code readability.
 Support for Common Widgets: Includes extensions for Text and more.
 
 ```dart
-Text("Hello, Flutter!")
-    .padding()
-    .center()
-    .backgroundColor(Colors.blue);
+"Hello World"
+    .txt
+    .bold()
+    .fontSize(16)
+    .color(Colors.blue)
+    .align(TextAlign.center)
+    .ellipsis()
+    .build();
+
 Image.asset('assets/person.png')
     .respectSafeArea()
 ```
@@ -47,10 +52,14 @@ import 'package:swiftify/swiftify.dart';
 ## Usage
 Text Modifier Example
 ```dart
-Text("Hello, Flutter!")
-    .padding()
-    .center()
-    .backgroundColor(Colors.blue)
+"Hello World"
+    .txt
+    .bold()
+    .fontSize(16)
+    .color(Colors.blue)
+    .align(TextAlign.center)
+    .ellipsis()
+    .build()
     .onGesture(
         onTap() => print("Hello world"),
     );
